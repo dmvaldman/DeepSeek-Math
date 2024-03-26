@@ -1,0 +1,418 @@
+[]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading data...
+Loading model and tokenizer...
+INFO 03-26 03:16:12 llm_engine.py:87] Initializing an LLM engine with config: model='deepseek-ai/deepseek-math-7b-base', tokenizer='deepseek-ai/deepseek-math-7b-base', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, seed=0)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 03-26 03:16:16 weight_utils.py:163] Using model weights format ['*.bin']
+INFO 03-26 03:16:29 llm_engine.py:357] # GPU blocks: 3521, # CPU blocks: 546
+INFO 03-26 03:16:32 model_runner.py:684] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 03-26 03:16:32 model_runner.py:688] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-26 03:16:35 model_runner.py:756] Graph capturing finished in 4 secs.
+Processed prompts:   0%|          | 0/274 [00:00<?, ?it/s]Processed prompts:   0%|          | 1/274 [00:08<39:56,  8.78s/it]Processed prompts:   1%|          | 2/274 [00:08<16:50,  3.72s/it]Processed prompts:   1%|▏         | 4/274 [00:09<06:39,  1.48s/it]Processed prompts:   2%|▏         | 5/274 [00:09<05:20,  1.19s/it]Processed prompts:   2%|▏         | 6/274 [00:10<04:04,  1.10it/s]Processed prompts:   3%|▎         | 7/274 [00:10<03:03,  1.46it/s]Processed prompts:   3%|▎         | 9/274 [00:10<01:55,  2.29it/s]Processed prompts:   4%|▎         | 10/274 [00:10<01:40,  2.63it/s]Processed prompts:   5%|▍         | 13/274 [00:11<01:05,  3.97it/s]Processed prompts:   5%|▌         | 14/274 [00:11<01:02,  4.13it/s]Processed prompts:   7%|▋         | 19/274 [00:11<00:43,  5.88it/s]Processed prompts:   9%|▉         | 24/274 [00:12<00:36,  6.78it/s]Processed prompts:  10%|█         | 28/274 [00:13<00:34,  7.19it/s]Processed prompts:  12%|█▏        | 34/274 [00:13<00:32,  7.28it/s]Processed prompts:  14%|█▍        | 38/274 [00:14<00:31,  7.46it/s]Processed prompts:  15%|█▍        | 40/274 [00:14<00:31,  7.36it/s]Processed prompts:  16%|█▋        | 45/274 [00:15<00:29,  7.65it/s]Processed prompts:  18%|█▊        | 48/274 [00:15<00:29,  7.63it/s]Processed prompts:  18%|█▊        | 49/274 [00:15<00:31,  7.23it/s]Processed prompts:  19%|█▊        | 51/274 [00:16<00:31,  7.09it/s]Processed prompts:  19%|█▉        | 53/274 [00:16<00:31,  6.98it/s]Processed prompts:  20%|██        | 55/274 [00:16<00:31,  6.88it/s]Processed prompts:  21%|██        | 57/274 [00:17<00:31,  6.82it/s]Processed prompts:  22%|██▏       | 61/274 [00:17<00:29,  7.31it/s]Processed prompts:  23%|██▎       | 63/274 [00:17<00:29,  7.14it/s]Processed prompts:  23%|██▎       | 64/274 [00:18<00:31,  6.71it/s]Processed prompts:  24%|██▎       | 65/274 [00:18<00:33,  6.28it/s]Processed prompts:  24%|██▍       | 66/274 [00:18<00:38,  5.42it/s]Processed prompts:  25%|██▍       | 68/274 [00:18<00:35,  5.88it/s]Processed prompts:  25%|██▌       | 69/274 [00:19<00:47,  4.35it/s]Processed prompts:  26%|██▌       | 71/274 [00:20<00:59,  3.39it/s]Processed prompts:  27%|██▋       | 73/274 [00:20<00:48,  4.12it/s]Processed prompts:  27%|██▋       | 75/274 [00:20<00:41,  4.75it/s]Processed prompts:  28%|██▊       | 76/274 [00:20<00:41,  4.79it/s]Processed prompts:  28%|██▊       | 77/274 [00:21<00:40,  4.83it/s]Processed prompts:  29%|██▉       | 80/274 [00:21<00:33,  5.85it/s]Processed prompts:  30%|███       | 83/274 [00:21<00:29,  6.44it/s]Processed prompts:  31%|███       | 85/274 [00:22<00:29,  6.50it/s]Processed prompts:  31%|███▏      | 86/274 [00:22<00:30,  6.18it/s]Processed prompts:  32%|███▏      | 87/274 [00:22<00:31,  5.85it/s]Processed prompts:  33%|███▎      | 90/274 [00:23<00:30,  6.01it/s]Processed prompts:  33%|███▎      | 91/274 [00:23<00:31,  5.79it/s]Processed prompts:  34%|███▍      | 93/274 [00:23<00:29,  6.05it/s]Processed prompts:  35%|███▍      | 95/274 [00:24<00:32,  5.53it/s]Processed prompts:  36%|███▌      | 99/274 [00:24<00:26,  6.49it/s]Processed prompts:  36%|███▋      | 100/274 [00:24<00:28,  6.21it/s]Processed prompts:  37%|███▋      | 101/274 [00:25<00:31,  5.41it/s]Processed prompts:  38%|███▊      | 103/274 [00:25<00:32,  5.33it/s]Processed prompts:  38%|███▊      | 105/274 [00:25<00:29,  5.68it/s]Processed prompts:  39%|███▉      | 108/274 [00:26<00:26,  6.33it/s]Processed prompts:  40%|███▉      | 109/274 [00:26<00:27,  6.03it/s]Processed prompts:  41%|████      | 111/274 [00:26<00:30,  5.34it/s]Processed prompts:  41%|████      | 113/274 [00:27<00:28,  5.71it/s]Processed prompts:  42%|████▏     | 115/274 [00:27<00:28,  5.59it/s]Processed prompts:  42%|████▏     | 116/274 [00:27<00:29,  5.44it/s]Processed prompts:  43%|████▎     | 118/274 [00:28<00:28,  5.38it/s]Processed prompts:  43%|████▎     | 119/274 [00:28<00:31,  4.85it/s]Processed prompts:  44%|████▍     | 121/274 [00:28<00:28,  5.38it/s]Processed prompts:  45%|████▍     | 122/274 [00:28<00:28,  5.26it/s]Processed prompts:  45%|████▍     | 123/274 [00:29<00:29,  5.15it/s]Processed prompts:  45%|████▌     | 124/274 [00:29<00:29,  5.07it/s]Processed prompts:  47%|████▋     | 128/274 [00:29<00:22,  6.46it/s]Processed prompts:  48%|████▊     | 131/274 [00:30<00:20,  6.85it/s]Processed prompts:  48%|████▊     | 132/274 [00:30<00:25,  5.52it/s]Processed prompts:  49%|████▉     | 134/274 [00:30<00:23,  5.84it/s]Processed prompts:  50%|████▉     | 136/274 [00:31<00:22,  6.10it/s]Processed prompts:  50%|█████     | 138/274 [00:31<00:21,  6.28it/s]Processed prompts:  51%|█████     | 139/274 [00:31<00:26,  5.06it/s]Processed prompts:  51%|█████▏    | 141/274 [00:32<00:25,  5.12it/s]Processed prompts:  52%|█████▏    | 142/274 [00:32<00:26,  5.07it/s]Processed prompts:  52%|█████▏    | 143/274 [00:32<00:30,  4.26it/s]Processed prompts:  53%|█████▎    | 144/274 [00:32<00:29,  4.39it/s]Processed prompts:  53%|█████▎    | 146/274 [00:33<00:24,  5.15it/s]Processed prompts:  54%|█████▎    | 147/274 [00:33<00:25,  5.07it/s]Processed prompts:  55%|█████▍    | 150/274 [00:33<00:20,  6.03it/s]Processed prompts:  55%|█████▌    | 151/274 [00:34<00:21,  5.76it/s]Processed prompts:  55%|█████▌    | 152/274 [00:34<00:24,  5.03it/s]Processed prompts:  56%|█████▌    | 154/274 [00:34<00:21,  5.62it/s]Processed prompts:  57%|█████▋    | 156/274 [00:34<00:19,  5.97it/s]Processed prompts:  58%|█████▊    | 158/274 [00:35<00:18,  6.21it/s]Processed prompts:  58%|█████▊    | 160/274 [00:35<00:17,  6.36it/s]Processed prompts:  59%|█████▉    | 162/274 [00:35<00:18,  5.96it/s]Processed prompts:  59%|█████▉    | 163/274 [00:36<00:19,  5.72it/s]Processed prompts:  60%|██████    | 165/274 [00:36<00:19,  5.54it/s]Processed prompts:  61%|██████    | 167/274 [00:36<00:18,  5.89it/s]Processed prompts:  61%|██████▏   | 168/274 [00:36<00:18,  5.66it/s]Processed prompts:  62%|██████▏   | 171/274 [00:37<00:16,  6.39it/s]Processed prompts:  63%|██████▎   | 172/274 [00:37<00:16,  6.10it/s]Processed prompts:  63%|██████▎   | 173/274 [00:37<00:17,  5.80it/s]Processed prompts:  65%|██████▍   | 177/274 [00:38<00:14,  6.84it/s]Processed prompts:  65%|██████▍   | 178/274 [00:38<00:14,  6.47it/s]Processed prompts:  66%|██████▌   | 180/274 [00:39<00:23,  4.09it/s]Processed prompts:  66%|██████▌   | 181/274 [00:39<00:21,  4.23it/s]Processed prompts:  66%|██████▋   | 182/274 [00:40<00:27,  3.33it/s]Processed prompts:  67%|██████▋   | 184/274 [00:40<00:24,  3.66it/s]Processed prompts:  68%|██████▊   | 185/274 [00:40<00:24,  3.62it/s]Processed prompts:  68%|██████▊   | 186/274 [00:41<00:22,  3.84it/s]Processed prompts:  68%|██████▊   | 187/274 [00:41<00:23,  3.74it/s]Processed prompts:  69%|██████▊   | 188/274 [00:41<00:21,  3.98it/s]Processed prompts:  70%|██████▉   | 191/274 [00:42<00:19,  4.30it/s]Processed prompts:  70%|███████   | 193/274 [00:42<00:16,  4.89it/s]Processed prompts:  71%|███████   | 194/274 [00:42<00:16,  4.87it/s]Processed prompts:  72%|███████▏  | 196/274 [00:43<00:16,  4.69it/s]Processed prompts:  72%|███████▏  | 198/274 [00:43<00:14,  5.22it/s]Processed prompts:  73%|███████▎  | 201/274 [00:43<00:12,  6.02it/s]Processed prompts:  74%|███████▎  | 202/274 [00:44<00:12,  5.79it/s]Processed prompts:  74%|███████▍  | 203/274 [00:44<00:12,  5.57it/s]Processed prompts:  74%|███████▍  | 204/274 [00:44<00:12,  5.39it/s]Processed prompts:  75%|███████▍  | 205/274 [00:44<00:13,  5.26it/s]Processed prompts:  76%|███████▌  | 208/274 [00:45<00:10,  6.24it/s]Processed prompts:  77%|███████▋  | 211/274 [00:45<00:08,  7.22it/s]Processed prompts:  78%|███████▊  | 215/274 [00:45<00:06,  9.69it/s]Processed prompts:  79%|███████▉  | 217/274 [00:45<00:06,  9.44it/s]Processed prompts:  80%|████████  | 220/274 [00:46<00:05, 10.54it/s]Processed prompts:  81%|████████  | 222/274 [00:46<00:05,  9.38it/s]Processed prompts:  82%|████████▏ | 224/274 [00:46<00:05,  9.42it/s]Processed prompts:  82%|████████▏ | 226/274 [00:46<00:05,  9.51it/s]Processed prompts:  83%|████████▎ | 227/274 [00:46<00:05,  9.09it/s]Processed prompts:  83%|████████▎ | 228/274 [00:47<00:05,  8.74it/s]Processed prompts:  84%|████████▎ | 229/274 [00:47<00:05,  8.47it/s]Processed prompts:  84%|████████▍ | 230/274 [00:47<00:05,  7.35it/s]Processed prompts:  84%|████████▍ | 231/274 [00:47<00:05,  7.44it/s]Processed prompts:  86%|████████▌ | 235/274 [00:47<00:02, 13.53it/s]Processed prompts:  86%|████████▋ | 237/274 [00:47<00:03, 11.42it/s]Processed prompts:  87%|████████▋ | 239/274 [00:47<00:02, 12.67it/s]Processed prompts:  88%|████████▊ | 241/274 [00:48<00:02, 13.79it/s]Processed prompts:  89%|████████▊ | 243/274 [00:48<00:02, 14.80it/s]Processed prompts:  89%|████████▉ | 245/274 [00:48<00:02, 10.63it/s]Processed prompts:  90%|█████████ | 247/274 [00:48<00:02, 11.29it/s]Processed prompts:  91%|█████████ | 249/274 [00:48<00:02,  9.44it/s]Processed prompts:  92%|█████████▏| 251/274 [00:49<00:02,  8.57it/s]Processed prompts:  92%|█████████▏| 252/274 [00:49<00:03,  6.90it/s]Processed prompts:  92%|█████████▏| 253/274 [00:49<00:03,  6.20it/s]Processed prompts:  93%|█████████▎| 254/274 [00:49<00:03,  6.44it/s]Processed prompts:  93%|█████████▎| 256/274 [00:50<00:02,  8.31it/s]Processed prompts:  94%|█████████▍| 258/274 [00:50<00:01, 10.01it/s]Processed prompts:  95%|█████████▌| 261/274 [00:50<00:01, 12.70it/s]Processed prompts:  96%|█████████▌| 263/274 [00:50<00:01, 10.71it/s]Processed prompts:  97%|█████████▋| 265/274 [00:50<00:00, 11.56it/s]Processed prompts:  97%|█████████▋| 267/274 [00:50<00:00, 10.56it/s]Processed prompts:  98%|█████████▊| 269/274 [00:51<00:00,  7.66it/s]Processed prompts:  99%|█████████▉| 271/274 [00:52<00:00,  5.25it/s]Processed prompts:  99%|█████████▉| 272/274 [00:52<00:00,  3.64it/s]Processed prompts: 100%|█████████▉| 273/274 [00:53<00:00,  3.38it/s]Processed prompts: 100%|██████████| 274/274 [00:56<00:00,  1.02it/s]Processed prompts: 100%|██████████| 274/274 [00:56<00:00,  4.85it/s]
+extract answer:   0%|          | 0/274 [00:00<?, ?it/s]extract answer: 100%|██████████| 274/274 [00:00<00:00, 29847.27it/s]
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+Calculating accuracy...
+output acc = 71.89781
+Timeout count >>> output eval = 0

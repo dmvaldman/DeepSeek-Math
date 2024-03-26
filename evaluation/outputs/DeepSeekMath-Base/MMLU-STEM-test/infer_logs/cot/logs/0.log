@@ -1,0 +1,400 @@
+[]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading data...
+Loading model and tokenizer...
+INFO 03-26 03:04:15 llm_engine.py:87] Initializing an LLM engine with config: model='deepseek-ai/deepseek-math-7b-base', tokenizer='deepseek-ai/deepseek-math-7b-base', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, seed=0)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 03-26 03:04:19 weight_utils.py:163] Using model weights format ['*.bin']
+INFO 03-26 03:04:31 llm_engine.py:357] # GPU blocks: 3521, # CPU blocks: 546
+INFO 03-26 03:04:34 model_runner.py:684] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 03-26 03:04:34 model_runner.py:688] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-26 03:04:37 model_runner.py:756] Graph capturing finished in 4 secs.
+Processed prompts:   0%|          | 0/755 [00:00<?, ?it/s]Processed prompts:   0%|          | 1/755 [00:08<1:41:34,  8.08s/it]Processed prompts:   0%|          | 2/755 [00:09<53:17,  4.25s/it]  Processed prompts:   0%|          | 3/755 [00:10<31:17,  2.50s/it]Processed prompts:   1%|          | 4/755 [00:10<22:49,  1.82s/it]Processed prompts:   1%|          | 6/755 [00:11<12:38,  1.01s/it]Processed prompts:   1%|          | 7/755 [00:12<11:52,  1.05it/s]Processed prompts:   1%|          | 8/755 [00:12<09:40,  1.29it/s]Processed prompts:   1%|          | 9/755 [00:13<09:27,  1.32it/s]Processed prompts:   1%|▏         | 11/755 [00:13<05:48,  2.13it/s]Processed prompts:   2%|▏         | 12/755 [00:13<05:18,  2.33it/s]Processed prompts:   2%|▏         | 13/755 [00:14<05:56,  2.08it/s]Processed prompts:   2%|▏         | 14/755 [00:14<05:04,  2.44it/s]Processed prompts:   2%|▏         | 15/755 [00:14<04:42,  2.62it/s]Processed prompts:   2%|▏         | 16/755 [00:15<04:25,  2.78it/s]Processed prompts:   2%|▏         | 17/755 [00:15<04:30,  2.73it/s]Processed prompts:   2%|▏         | 18/755 [00:15<03:59,  3.08it/s]Processed prompts:   3%|▎         | 19/755 [00:16<03:36,  3.40it/s]Processed prompts:   3%|▎         | 20/755 [00:16<03:56,  3.11it/s]Processed prompts:   3%|▎         | 22/755 [00:16<03:31,  3.46it/s]Processed prompts:   3%|▎         | 23/755 [00:17<05:32,  2.20it/s]Processed prompts:   3%|▎         | 24/755 [00:18<05:16,  2.31it/s]Processed prompts:   3%|▎         | 25/755 [00:18<05:06,  2.38it/s]Processed prompts:   3%|▎         | 26/755 [00:19<06:55,  1.76it/s]Processed prompts:   4%|▎         | 27/755 [00:19<06:04,  2.00it/s]Processed prompts:   4%|▎         | 28/755 [00:20<05:01,  2.41it/s]Processed prompts:   4%|▍         | 29/755 [00:20<06:18,  1.92it/s]Processed prompts:   4%|▍         | 30/755 [00:21<06:20,  1.90it/s]Processed prompts:   4%|▍         | 31/755 [00:21<05:14,  2.30it/s]Processed prompts:   4%|▍         | 32/755 [00:22<06:13,  1.93it/s]Processed prompts:   4%|▍         | 33/755 [00:22<05:09,  2.33it/s]Processed prompts:   5%|▍         | 34/755 [00:23<05:15,  2.29it/s]Processed prompts:   5%|▍         | 36/755 [00:23<03:47,  3.16it/s]Processed prompts:   5%|▍         | 37/755 [00:23<03:28,  3.45it/s]Processed prompts:   5%|▌         | 38/755 [00:23<03:12,  3.73it/s]Processed prompts:   5%|▌         | 39/755 [00:24<04:06,  2.90it/s]Processed prompts:   6%|▌         | 42/755 [00:24<02:50,  4.19it/s]Processed prompts:   6%|▌         | 43/755 [00:26<05:08,  2.31it/s]Processed prompts:   6%|▌         | 44/755 [00:26<05:24,  2.19it/s]Processed prompts:   6%|▌         | 45/755 [00:26<04:47,  2.47it/s]Processed prompts:   6%|▌         | 46/755 [00:27<04:11,  2.82it/s]Processed prompts:   6%|▌         | 47/755 [00:27<03:58,  2.97it/s]Processed prompts:   6%|▋         | 48/755 [00:27<03:49,  3.09it/s]Processed prompts:   6%|▋         | 49/755 [00:28<05:30,  2.14it/s]Processed prompts:   7%|▋         | 50/755 [00:28<04:45,  2.47it/s]Processed prompts:   7%|▋         | 51/755 [00:28<04:07,  2.85it/s]Processed prompts:   7%|▋         | 52/755 [00:29<04:13,  2.77it/s]Processed prompts:   7%|▋         | 53/755 [00:29<04:35,  2.55it/s]Processed prompts:   7%|▋         | 54/755 [00:30<03:59,  2.93it/s]Processed prompts:   7%|▋         | 55/755 [00:30<03:31,  3.31it/s]Processed prompts:   7%|▋         | 56/755 [00:30<03:46,  3.08it/s]Processed prompts:   8%|▊         | 57/755 [00:31<04:16,  2.72it/s]Processed prompts:   8%|▊         | 58/755 [00:31<03:42,  3.13it/s]Processed prompts:   8%|▊         | 59/755 [00:31<03:22,  3.44it/s]Processed prompts:   8%|▊         | 60/755 [00:31<03:05,  3.75it/s]Processed prompts:   8%|▊         | 64/755 [00:32<02:19,  4.95it/s]Processed prompts:   9%|▊         | 65/755 [00:32<02:30,  4.58it/s]Processed prompts:   9%|▊         | 66/755 [00:33<03:35,  3.20it/s]Processed prompts:   9%|▉         | 67/755 [00:33<04:14,  2.71it/s]Processed prompts:   9%|▉         | 68/755 [00:34<03:46,  3.03it/s]Processed prompts:   9%|▉         | 69/755 [00:34<03:47,  3.02it/s]Processed prompts:   9%|▉         | 70/755 [00:34<03:42,  3.08it/s]Processed prompts:   9%|▉         | 71/755 [00:35<03:37,  3.14it/s]Processed prompts:  10%|▉         | 72/755 [00:35<03:19,  3.43it/s]Processed prompts:  10%|▉         | 73/755 [00:36<05:32,  2.05it/s]Processed prompts:  10%|▉         | 75/755 [00:37<05:02,  2.24it/s]Processed prompts:  10%|█         | 76/755 [00:37<04:25,  2.56it/s]Processed prompts:  10%|█         | 79/755 [00:37<03:00,  3.75it/s]Processed prompts:  11%|█         | 80/755 [00:37<02:54,  3.87it/s]Processed prompts:  11%|█         | 81/755 [00:38<02:48,  3.99it/s]Processed prompts:  11%|█         | 82/755 [00:38<03:57,  2.83it/s]Processed prompts:  11%|█         | 84/755 [00:39<03:17,  3.40it/s]Processed prompts:  11%|█▏        | 85/755 [00:39<03:06,  3.60it/s]Processed prompts:  11%|█▏        | 86/755 [00:39<03:10,  3.51it/s]Processed prompts:  12%|█▏        | 87/755 [00:39<03:00,  3.70it/s]Processed prompts:  12%|█▏        | 88/755 [00:40<02:51,  3.89it/s]Processed prompts:  12%|█▏        | 89/755 [00:40<03:14,  3.42it/s]Processed prompts:  12%|█▏        | 91/755 [00:41<04:25,  2.50it/s]Processed prompts:  12%|█▏        | 92/755 [00:41<03:56,  2.81it/s]Processed prompts:  13%|█▎        | 95/755 [00:42<02:45,  3.99it/s]Processed prompts:  13%|█▎        | 96/755 [00:42<02:41,  4.08it/s]Processed prompts:  13%|█▎        | 98/755 [00:43<02:51,  3.84it/s]Processed prompts:  13%|█▎        | 99/755 [00:43<02:56,  3.72it/s]Processed prompts:  13%|█▎        | 101/755 [00:43<02:31,  4.31it/s]Processed prompts:  14%|█▎        | 102/755 [00:43<02:29,  4.36it/s]Processed prompts:  14%|█▎        | 103/755 [00:44<02:28,  4.39it/s]Processed prompts:  14%|█▍        | 104/755 [00:44<02:53,  3.75it/s]Processed prompts:  14%|█▍        | 105/755 [00:45<03:26,  3.14it/s]Processed prompts:  14%|█▍        | 106/755 [00:45<03:22,  3.21it/s]Processed prompts:  14%|█▍        | 107/755 [00:45<04:02,  2.68it/s]Processed prompts:  14%|█▍        | 108/755 [00:46<04:04,  2.65it/s]Processed prompts:  15%|█▍        | 110/755 [00:46<03:14,  3.31it/s]Processed prompts:  15%|█▍        | 111/755 [00:47<03:53,  2.76it/s]Processed prompts:  15%|█▍        | 113/755 [00:47<03:12,  3.34it/s]Processed prompts:  15%|█▌        | 114/755 [00:47<02:58,  3.59it/s]Processed prompts:  15%|█▌        | 115/755 [00:48<03:39,  2.92it/s]Processed prompts:  15%|█▌        | 116/755 [00:48<03:17,  3.24it/s]Processed prompts:  15%|█▌        | 117/755 [00:48<03:28,  3.05it/s]Processed prompts:  16%|█▌        | 118/755 [00:49<03:10,  3.35it/s]Processed prompts:  16%|█▌        | 120/755 [00:49<02:35,  4.09it/s]Processed prompts:  16%|█▌        | 121/755 [00:49<02:42,  3.91it/s]Processed prompts:  16%|█▋        | 123/755 [00:50<02:40,  3.95it/s]Processed prompts:  16%|█▋        | 124/755 [00:50<02:35,  4.06it/s]Processed prompts:  17%|█▋        | 125/755 [00:50<02:31,  4.16it/s]Processed prompts:  17%|█▋        | 126/755 [00:51<03:19,  3.15it/s]Processed prompts:  17%|█▋        | 127/755 [00:51<03:00,  3.47it/s]Processed prompts:  17%|█▋        | 128/755 [00:51<03:03,  3.42it/s]Processed prompts:  17%|█▋        | 130/755 [00:52<02:28,  4.20it/s]Processed prompts:  17%|█▋        | 131/755 [00:52<02:39,  3.92it/s]Processed prompts:  17%|█▋        | 132/755 [00:52<02:31,  4.10it/s]Processed prompts:  18%|█▊        | 133/755 [00:53<03:22,  3.07it/s]Processed prompts:  18%|█▊        | 135/755 [00:53<03:01,  3.41it/s]Processed prompts:  18%|█▊        | 136/755 [00:53<02:50,  3.63it/s]Processed prompts:  18%|█▊        | 138/755 [00:54<02:23,  4.30it/s]Processed prompts:  18%|█▊        | 139/755 [00:54<02:21,  4.34it/s]Processed prompts:  19%|█▊        | 140/755 [00:54<02:20,  4.37it/s]Processed prompts:  19%|█▉        | 143/755 [00:55<01:53,  5.41it/s]Processed prompts:  19%|█▉        | 144/755 [00:55<02:16,  4.47it/s]Processed prompts:  19%|█▉        | 145/755 [00:55<02:36,  3.91it/s]Processed prompts:  19%|█▉        | 146/755 [00:56<02:28,  4.09it/s]Processed prompts:  19%|█▉        | 147/755 [00:56<02:25,  4.19it/s]Processed prompts:  20%|█▉        | 148/755 [00:56<02:59,  3.37it/s]Processed prompts:  20%|█▉        | 149/755 [00:57<02:47,  3.62it/s]Processed prompts:  20%|█▉        | 150/755 [00:58<04:50,  2.08it/s]Processed prompts:  20%|██        | 151/755 [00:58<03:55,  2.57it/s]Processed prompts:  20%|██        | 152/755 [00:58<03:25,  2.94it/s]Processed prompts:  20%|██        | 153/755 [00:59<06:12,  1.61it/s]Processed prompts:  20%|██        | 154/755 [01:00<05:34,  1.79it/s]Processed prompts:  21%|██        | 156/755 [01:00<03:47,  2.64it/s]Processed prompts:  21%|██        | 157/755 [01:01<05:43,  1.74it/s]Processed prompts:  21%|██        | 158/755 [01:02<06:03,  1.64it/s]Processed prompts:  21%|██        | 159/755 [01:02<05:40,  1.75it/s]Processed prompts:  21%|██▏       | 161/755 [01:03<04:37,  2.14it/s]Processed prompts:  21%|██▏       | 162/755 [01:04<05:25,  1.82it/s]Processed prompts:  22%|██▏       | 163/755 [01:04<05:36,  1.76it/s]Processed prompts:  22%|██▏       | 164/755 [01:05<04:41,  2.10it/s]Processed prompts:  22%|██▏       | 165/755 [01:05<03:59,  2.46it/s]Processed prompts:  22%|██▏       | 166/755 [01:06<06:11,  1.58it/s]Processed prompts:  22%|██▏       | 168/755 [01:06<04:20,  2.25it/s]Processed prompts:  22%|██▏       | 169/755 [01:07<03:48,  2.56it/s]Processed prompts:  23%|██▎       | 170/755 [01:08<05:28,  1.78it/s]Processed prompts:  23%|██▎       | 172/755 [01:08<04:37,  2.10it/s]Processed prompts:  23%|██▎       | 173/755 [01:09<04:24,  2.20it/s]Processed prompts:  23%|██▎       | 174/755 [01:09<04:00,  2.42it/s]Processed prompts:  23%|██▎       | 175/755 [01:10<03:55,  2.46it/s]Processed prompts:  23%|██▎       | 176/755 [01:10<03:49,  2.52it/s]Processed prompts:  24%|██▎       | 178/755 [01:11<03:21,  2.86it/s]Processed prompts:  24%|██▎       | 179/755 [01:11<03:03,  3.14it/s]Processed prompts:  24%|██▍       | 180/755 [01:11<03:06,  3.09it/s]Processed prompts:  24%|██▍       | 181/755 [01:11<02:50,  3.37it/s]Processed prompts:  24%|██▍       | 182/755 [01:12<04:20,  2.20it/s]Processed prompts:  24%|██▍       | 183/755 [01:12<03:43,  2.56it/s]Processed prompts:  24%|██▍       | 184/755 [01:13<03:15,  2.92it/s]Processed prompts:  25%|██▍       | 185/755 [01:13<03:09,  3.01it/s]Processed prompts:  25%|██▍       | 186/755 [01:13<03:05,  3.06it/s]Processed prompts:  25%|██▍       | 188/755 [01:14<03:10,  2.98it/s]Processed prompts:  25%|██▌       | 189/755 [01:14<02:56,  3.20it/s]Processed prompts:  25%|██▌       | 190/755 [01:14<02:56,  3.21it/s]Processed prompts:  25%|██▌       | 191/755 [01:15<03:08,  3.00it/s]Processed prompts:  25%|██▌       | 192/755 [01:16<03:55,  2.39it/s]Processed prompts:  26%|██▌       | 193/755 [01:16<04:03,  2.30it/s]Processed prompts:  26%|██▌       | 194/755 [01:18<07:47,  1.20it/s]Processed prompts:  26%|██▌       | 195/755 [01:18<06:05,  1.53it/s]Processed prompts:  26%|██▌       | 197/755 [01:19<04:33,  2.04it/s]Processed prompts:  26%|██▌       | 198/755 [01:19<04:42,  1.97it/s]Processed prompts:  26%|██▋       | 199/755 [01:20<04:49,  1.92it/s]Processed prompts:  26%|██▋       | 200/755 [01:20<04:08,  2.24it/s]Processed prompts:  27%|██▋       | 201/755 [01:21<04:49,  1.91it/s]Processed prompts:  27%|██▋       | 202/755 [01:21<04:41,  1.97it/s]Processed prompts:  27%|██▋       | 203/755 [01:22<04:21,  2.11it/s]Processed prompts:  27%|██▋       | 205/755 [01:23<04:59,  1.83it/s]Processed prompts:  27%|██▋       | 206/755 [01:23<04:16,  2.14it/s]Processed prompts:  27%|██▋       | 207/755 [01:23<04:05,  2.23it/s]Processed prompts:  28%|██▊       | 209/755 [01:24<03:39,  2.49it/s]Processed prompts:  28%|██▊       | 210/755 [01:24<03:16,  2.78it/s]Processed prompts:  28%|██▊       | 211/755 [01:25<02:57,  3.07it/s]Processed prompts:  28%|██▊       | 213/755 [01:25<02:32,  3.55it/s]Processed prompts:  28%|██▊       | 214/755 [01:25<02:45,  3.26it/s]Processed prompts:  28%|██▊       | 215/755 [01:26<03:52,  2.32it/s]Processed prompts:  29%|██▊       | 216/755 [01:27<04:20,  2.07it/s]Processed prompts:  29%|██▉       | 218/755 [01:28<04:24,  2.03it/s]Processed prompts:  29%|██▉       | 219/755 [01:28<03:50,  2.32it/s]Processed prompts:  29%|██▉       | 220/755 [01:29<04:50,  1.84it/s]Processed prompts:  29%|██▉       | 222/755 [01:29<03:49,  2.32it/s]Processed prompts:  30%|██▉       | 223/755 [01:30<03:33,  2.49it/s]Processed prompts:  30%|██▉       | 224/755 [01:30<03:20,  2.65it/s]Processed prompts:  30%|██▉       | 226/755 [01:31<02:52,  3.07it/s]Processed prompts:  30%|███       | 227/755 [01:31<03:48,  2.31it/s]Processed prompts:  30%|███       | 229/755 [01:32<03:20,  2.63it/s]Processed prompts:  30%|███       | 230/755 [01:33<03:40,  2.38it/s]Processed prompts:  31%|███       | 231/755 [01:33<03:15,  2.68it/s]Processed prompts:  31%|███       | 232/755 [01:33<02:55,  2.98it/s]Processed prompts:  31%|███       | 233/755 [01:34<03:26,  2.52it/s]Processed prompts:  31%|███       | 234/755 [01:34<03:25,  2.53it/s]Processed prompts:  31%|███       | 235/755 [01:34<03:44,  2.32it/s]Processed prompts:  31%|███▏      | 236/755 [01:35<03:13,  2.69it/s]Processed prompts:  31%|███▏      | 237/755 [01:35<02:50,  3.03it/s]Processed prompts:  32%|███▏      | 238/755 [01:35<02:45,  3.12it/s]Processed prompts:  32%|███▏      | 239/755 [01:36<02:43,  3.15it/s]Processed prompts:  32%|███▏      | 241/755 [01:36<02:08,  4.00it/s]Processed prompts:  32%|███▏      | 242/755 [01:36<02:36,  3.27it/s]Processed prompts:  32%|███▏      | 243/755 [01:37<03:09,  2.70it/s]Processed prompts:  32%|███▏      | 244/755 [01:37<02:41,  3.17it/s]Processed prompts:  32%|███▏      | 245/755 [01:37<02:52,  2.96it/s]Processed prompts:  33%|███▎      | 246/755 [01:38<03:24,  2.49it/s]Processed prompts:  33%|███▎      | 247/755 [01:38<03:10,  2.67it/s]Processed prompts:  33%|███▎      | 248/755 [01:39<03:12,  2.64it/s]Processed prompts:  33%|███▎      | 249/755 [01:39<03:01,  2.79it/s]Processed prompts:  33%|███▎      | 250/755 [01:40<03:19,  2.54it/s]Processed prompts:  33%|███▎      | 251/755 [01:40<03:05,  2.71it/s]Processed prompts:  34%|███▎      | 253/755 [01:40<02:40,  3.13it/s]Processed prompts:  34%|███▎      | 254/755 [01:41<02:49,  2.96it/s]Processed prompts:  34%|███▍      | 256/755 [01:42<03:58,  2.09it/s]Processed prompts:  34%|███▍      | 258/755 [01:42<02:57,  2.80it/s]Processed prompts:  34%|███▍      | 259/755 [01:43<03:17,  2.51it/s]Processed prompts:  35%|███▍      | 261/755 [01:44<03:29,  2.35it/s]Processed prompts:  35%|███▍      | 262/755 [01:44<03:08,  2.61it/s]Processed prompts:  35%|███▍      | 263/755 [01:45<04:15,  1.92it/s]Processed prompts:  35%|███▍      | 264/755 [01:45<03:39,  2.24it/s]Processed prompts:  35%|███▌      | 265/755 [01:46<04:14,  1.92it/s]Processed prompts:  35%|███▌      | 266/755 [01:47<05:04,  1.61it/s]Processed prompts:  35%|███▌      | 267/755 [01:47<04:13,  1.93it/s]Processed prompts:  35%|███▌      | 268/755 [01:48<04:28,  1.82it/s]Processed prompts:  36%|███▌      | 269/755 [01:48<03:53,  2.08it/s]Processed prompts:  36%|███▌      | 270/755 [01:49<03:51,  2.09it/s]Processed prompts:  36%|███▌      | 271/755 [01:49<04:15,  1.90it/s]Processed prompts:  36%|███▌      | 272/755 [01:50<04:40,  1.72it/s]Processed prompts:  36%|███▋      | 274/755 [01:51<03:40,  2.18it/s]Processed prompts:  37%|███▋      | 276/755 [01:51<03:09,  2.53it/s]Processed prompts:  37%|███▋      | 278/755 [01:52<03:21,  2.36it/s]Processed prompts:  37%|███▋      | 279/755 [01:53<03:24,  2.33it/s]Processed prompts:  37%|███▋      | 280/755 [01:53<03:19,  2.39it/s]Processed prompts:  37%|███▋      | 281/755 [01:53<03:10,  2.48it/s]Processed prompts:  37%|███▋      | 282/755 [01:54<02:49,  2.79it/s]Processed prompts:  37%|███▋      | 283/755 [01:54<03:35,  2.19it/s]Processed prompts:  38%|███▊      | 284/755 [01:55<03:37,  2.17it/s]Processed prompts:  38%|███▊      | 285/755 [01:56<04:33,  1.72it/s]Processed prompts:  38%|███▊      | 286/755 [01:56<04:32,  1.72it/s]Processed prompts:  38%|███▊      | 287/755 [01:56<03:43,  2.09it/s]Processed prompts:  38%|███▊      | 288/755 [01:57<04:28,  1.74it/s]Processed prompts:  38%|███▊      | 290/755 [01:58<03:09,  2.45it/s]Processed prompts:  39%|███▊      | 291/755 [01:58<02:57,  2.61it/s]Processed prompts:  39%|███▊      | 292/755 [01:58<02:38,  2.93it/s]Processed prompts:  39%|███▉      | 293/755 [01:59<02:47,  2.75it/s]Processed prompts:  39%|███▉      | 294/755 [01:59<02:29,  3.08it/s]Processed prompts:  39%|███▉      | 295/755 [01:59<02:27,  3.12it/s]Processed prompts:  39%|███▉      | 296/755 [02:00<03:50,  1.99it/s]Processed prompts:  39%|███▉      | 297/755 [02:01<03:59,  1.91it/s]Processed prompts:  39%|███▉      | 298/755 [02:01<03:51,  1.98it/s]Processed prompts:  40%|███▉      | 299/755 [02:01<03:12,  2.37it/s]Processed prompts:  40%|███▉      | 300/755 [02:02<03:17,  2.30it/s]Processed prompts:  40%|████      | 302/755 [02:02<02:20,  3.23it/s]Processed prompts:  40%|████      | 303/755 [02:03<02:46,  2.71it/s]Processed prompts:  40%|████      | 305/755 [02:03<02:23,  3.13it/s]Processed prompts:  41%|████      | 306/755 [02:03<02:13,  3.36it/s]Processed prompts:  41%|████      | 308/755 [02:04<02:04,  3.58it/s]Processed prompts:  41%|████      | 309/755 [02:05<02:38,  2.81it/s]Processed prompts:  41%|████      | 310/755 [02:05<02:57,  2.51it/s]Processed prompts:  41%|████      | 311/755 [02:05<02:54,  2.55it/s]Processed prompts:  41%|████▏     | 312/755 [02:06<02:32,  2.91it/s]Processed prompts:  41%|████▏     | 313/755 [02:07<03:36,  2.04it/s]Processed prompts:  42%|████▏     | 314/755 [02:07<03:00,  2.44it/s]Processed prompts:  42%|████▏     | 316/755 [02:07<02:20,  3.12it/s]Processed prompts:  42%|████▏     | 317/755 [02:08<03:09,  2.31it/s]Processed prompts:  42%|████▏     | 318/755 [02:08<02:38,  2.75it/s]Processed prompts:  42%|████▏     | 319/755 [02:09<02:54,  2.50it/s]Processed prompts:  42%|████▏     | 320/755 [02:09<02:40,  2.70it/s]Processed prompts:  43%|████▎     | 321/755 [02:09<02:22,  3.05it/s]Processed prompts:  43%|████▎     | 322/755 [02:10<02:27,  2.93it/s]Processed prompts:  43%|████▎     | 324/755 [02:10<02:23,  3.00it/s]Processed prompts:  43%|████▎     | 326/755 [02:11<02:21,  3.03it/s]Processed prompts:  43%|████▎     | 327/755 [02:11<02:05,  3.41it/s]Processed prompts:  43%|████▎     | 328/755 [02:11<02:14,  3.18it/s]Processed prompts:  44%|████▎     | 329/755 [02:12<02:11,  3.24it/s]Processed prompts:  44%|████▎     | 330/755 [02:12<02:08,  3.30it/s]Processed prompts:  44%|████▍     | 331/755 [02:12<02:35,  2.73it/s]Processed prompts:  44%|████▍     | 332/755 [02:13<03:24,  2.07it/s]Processed prompts:  44%|████▍     | 333/755 [02:13<02:52,  2.45it/s]Processed prompts:  44%|████▍     | 335/755 [02:14<02:29,  2.82it/s]Processed prompts:  45%|████▍     | 336/755 [02:15<02:40,  2.61it/s]Processed prompts:  45%|████▍     | 337/755 [02:15<02:21,  2.95it/s]Processed prompts:  45%|████▍     | 339/755 [02:16<02:28,  2.80it/s]Processed prompts:  45%|████▌     | 340/755 [02:16<02:21,  2.93it/s]Processed prompts:  45%|████▌     | 341/755 [02:16<02:09,  3.21it/s]Processed prompts:  45%|████▌     | 343/755 [02:16<01:52,  3.67it/s]Processed prompts:  46%|████▌     | 344/755 [02:17<02:17,  2.98it/s]Processed prompts:  46%|████▌     | 345/755 [02:18<02:39,  2.58it/s]Processed prompts:  46%|████▌     | 346/755 [02:18<02:22,  2.87it/s]Processed prompts:  46%|████▌     | 347/755 [02:18<02:06,  3.22it/s]Processed prompts:  46%|████▌     | 348/755 [02:18<02:05,  3.24it/s]Processed prompts:  46%|████▌     | 349/755 [02:19<02:14,  3.02it/s]Processed prompts:  46%|████▋     | 351/755 [02:19<01:48,  3.72it/s]Processed prompts:  47%|████▋     | 352/755 [02:19<01:59,  3.37it/s]Processed prompts:  47%|████▋     | 354/755 [02:20<01:51,  3.61it/s]Processed prompts:  47%|████▋     | 355/755 [02:20<01:53,  3.54it/s]Processed prompts:  47%|████▋     | 356/755 [02:21<01:54,  3.47it/s]Processed prompts:  47%|████▋     | 357/755 [02:21<01:47,  3.69it/s]Processed prompts:  47%|████▋     | 358/755 [02:21<01:42,  3.88it/s]Processed prompts:  48%|████▊     | 359/755 [02:21<01:56,  3.41it/s]Processed prompts:  48%|████▊     | 361/755 [02:22<02:16,  2.88it/s]Processed prompts:  48%|████▊     | 362/755 [02:23<02:12,  2.97it/s]Processed prompts:  48%|████▊     | 363/755 [02:23<02:00,  3.26it/s]Processed prompts:  48%|████▊     | 364/755 [02:23<01:51,  3.50it/s]Processed prompts:  49%|████▊     | 368/755 [02:24<01:33,  4.14it/s]Processed prompts:  49%|████▉     | 369/755 [02:24<01:36,  3.99it/s]Processed prompts:  49%|████▉     | 370/755 [02:24<01:47,  3.59it/s]Processed prompts:  49%|████▉     | 371/755 [02:25<02:03,  3.12it/s]Processed prompts:  49%|████▉     | 372/755 [02:25<01:52,  3.41it/s]Processed prompts:  49%|████▉     | 373/755 [02:26<02:01,  3.15it/s]Processed prompts:  50%|████▉     | 374/755 [02:26<01:49,  3.47it/s]Processed prompts:  50%|████▉     | 376/755 [02:26<01:46,  3.55it/s]Processed prompts:  50%|████▉     | 377/755 [02:27<01:55,  3.26it/s]Processed prompts:  50%|█████     | 378/755 [02:27<02:01,  3.09it/s]Processed prompts:  50%|█████     | 379/755 [02:27<01:51,  3.37it/s]Processed prompts:  50%|█████     | 380/755 [02:28<01:59,  3.15it/s]Processed prompts:  50%|█████     | 381/755 [02:28<02:12,  2.81it/s]Processed prompts:  51%|█████     | 382/755 [02:29<03:15,  1.91it/s]Processed prompts:  51%|█████     | 383/755 [02:30<03:43,  1.67it/s]Processed prompts:  51%|█████     | 385/755 [02:30<02:32,  2.43it/s]Processed prompts:  51%|█████     | 386/755 [02:30<02:13,  2.76it/s]Processed prompts:  51%|█████▏    | 387/755 [02:31<02:16,  2.69it/s]Processed prompts:  51%|█████▏    | 388/755 [02:33<05:02,  1.21it/s]Processed prompts:  52%|█████▏    | 389/755 [02:34<04:49,  1.26it/s]Processed prompts:  52%|█████▏    | 391/755 [02:34<03:24,  1.78it/s]Processed prompts:  52%|█████▏    | 392/755 [02:34<02:54,  2.08it/s]Processed prompts:  52%|█████▏    | 393/755 [02:35<02:29,  2.42it/s]Processed prompts:  52%|█████▏    | 394/755 [02:35<02:09,  2.78it/s]Processed prompts:  52%|█████▏    | 395/755 [02:35<02:08,  2.80it/s]Processed prompts:  52%|█████▏    | 396/755 [02:36<03:32,  1.69it/s]Processed prompts:  53%|█████▎    | 397/755 [02:37<02:55,  2.04it/s]Processed prompts:  53%|█████▎    | 398/755 [02:37<02:46,  2.15it/s]Processed prompts:  53%|█████▎    | 399/755 [02:38<03:29,  1.70it/s]Processed prompts:  53%|█████▎    | 401/755 [02:39<02:46,  2.12it/s]Processed prompts:  53%|█████▎    | 402/755 [02:39<02:31,  2.34it/s]Processed prompts:  53%|█████▎    | 403/755 [02:39<02:26,  2.40it/s]Processed prompts:  54%|█████▎    | 404/755 [02:40<02:55,  2.00it/s]Processed prompts:  54%|█████▎    | 405/755 [02:40<02:28,  2.36it/s]Processed prompts:  54%|█████▍    | 406/755 [02:41<02:32,  2.29it/s]Processed prompts:  54%|█████▍    | 407/755 [02:41<02:43,  2.13it/s]Processed prompts:  54%|█████▍    | 408/755 [02:42<03:58,  1.46it/s]Processed prompts:  54%|█████▍    | 409/755 [02:43<03:51,  1.49it/s]Processed prompts:  54%|█████▍    | 410/755 [02:43<03:13,  1.78it/s]Processed prompts:  54%|█████▍    | 411/755 [02:44<02:55,  1.97it/s]Processed prompts:  55%|█████▍    | 412/755 [02:44<03:23,  1.69it/s]Processed prompts:  55%|█████▍    | 413/755 [02:46<04:06,  1.39it/s]Processed prompts:  55%|█████▍    | 414/755 [02:47<05:00,  1.14it/s]Processed prompts:  55%|█████▍    | 415/755 [02:47<04:07,  1.37it/s]Processed prompts:  55%|█████▌    | 416/755 [02:48<03:41,  1.53it/s]Processed prompts:  55%|█████▌    | 417/755 [02:48<03:37,  1.56it/s]Processed prompts:  56%|█████▌    | 420/755 [02:49<02:07,  2.63it/s]Processed prompts:  56%|█████▌    | 421/755 [02:49<02:29,  2.24it/s]Processed prompts:  56%|█████▌    | 422/755 [02:50<02:32,  2.18it/s]Processed prompts:  56%|█████▌    | 423/755 [02:50<02:18,  2.40it/s]Processed prompts:  56%|█████▌    | 424/755 [02:51<02:20,  2.35it/s]Processed prompts:  56%|█████▋    | 426/755 [02:52<02:39,  2.06it/s]Processed prompts:  57%|█████▋    | 427/755 [02:52<02:24,  2.27it/s]Processed prompts:  57%|█████▋    | 428/755 [02:52<02:04,  2.62it/s]Processed prompts:  57%|█████▋    | 429/755 [02:53<01:50,  2.95it/s]Processed prompts:  57%|█████▋    | 430/755 [02:53<01:38,  3.30it/s]Processed prompts:  57%|█████▋    | 432/755 [02:53<01:30,  3.58it/s]Processed prompts:  57%|█████▋    | 433/755 [02:54<01:30,  3.55it/s]Processed prompts:  57%|█████▋    | 434/755 [02:54<01:37,  3.29it/s]Processed prompts:  58%|█████▊    | 435/755 [02:54<01:36,  3.33it/s]Processed prompts:  58%|█████▊    | 436/755 [02:54<01:27,  3.64it/s]Processed prompts:  58%|█████▊    | 437/755 [02:55<01:57,  2.70it/s]Processed prompts:  58%|█████▊    | 438/755 [02:55<01:42,  3.09it/s]Processed prompts:  58%|█████▊    | 441/755 [02:56<01:19,  3.96it/s]Processed prompts:  59%|█████▉    | 445/755 [02:57<01:20,  3.87it/s]Processed prompts:  59%|█████▉    | 447/755 [02:57<01:22,  3.74it/s]Processed prompts:  59%|█████▉    | 448/755 [02:58<01:29,  3.43it/s]Processed prompts:  60%|█████▉    | 450/755 [02:59<01:32,  3.28it/s]Processed prompts:  60%|█████▉    | 451/755 [02:59<01:31,  3.31it/s]Processed prompts:  60%|█████▉    | 452/755 [02:59<01:30,  3.34it/s]Processed prompts:  60%|██████    | 453/755 [02:59<01:29,  3.37it/s]Processed prompts:  60%|██████    | 454/755 [03:00<01:37,  3.10it/s]Processed prompts:  60%|██████    | 456/755 [03:00<01:32,  3.23it/s]Processed prompts:  61%|██████    | 457/755 [03:01<01:37,  3.07it/s]Processed prompts:  61%|██████    | 458/755 [03:01<01:28,  3.37it/s]Processed prompts:  61%|██████    | 459/755 [03:01<01:28,  3.36it/s]Processed prompts:  61%|██████    | 460/755 [03:01<01:20,  3.66it/s]Processed prompts:  61%|██████    | 462/755 [03:02<01:15,  3.86it/s]Processed prompts:  61%|██████▏   | 464/755 [03:02<01:09,  4.18it/s]Processed prompts:  62%|██████▏   | 465/755 [03:03<01:19,  3.65it/s]Processed prompts:  62%|██████▏   | 466/755 [03:03<01:14,  3.87it/s]Processed prompts:  62%|██████▏   | 467/755 [03:03<01:10,  4.07it/s]Processed prompts:  62%|██████▏   | 468/755 [03:04<01:32,  3.11it/s]Processed prompts:  62%|██████▏   | 470/755 [03:04<01:17,  3.68it/s]Processed prompts:  62%|██████▏   | 471/755 [03:04<01:19,  3.59it/s]Processed prompts:  63%|██████▎   | 472/755 [03:05<01:13,  3.83it/s]Processed prompts:  63%|██████▎   | 473/755 [03:05<01:15,  3.73it/s]Processed prompts:  63%|██████▎   | 474/755 [03:05<01:23,  3.38it/s]Processed prompts:  63%|██████▎   | 475/755 [03:06<01:31,  3.06it/s]Processed prompts:  63%|██████▎   | 476/755 [03:06<01:21,  3.42it/s]Processed prompts:  63%|██████▎   | 478/755 [03:06<01:04,  4.29it/s]Processed prompts:  63%|██████▎   | 479/755 [03:07<01:13,  3.76it/s]Processed prompts:  64%|██████▎   | 480/755 [03:07<01:14,  3.67it/s]Processed prompts:  64%|██████▎   | 481/755 [03:07<01:10,  3.87it/s]Processed prompts:  64%|██████▍   | 482/755 [03:08<01:27,  3.12it/s]Processed prompts:  64%|██████▍   | 483/755 [03:08<01:24,  3.21it/s]Processed prompts:  64%|██████▍   | 484/755 [03:08<01:16,  3.56it/s]Processed prompts:  64%|██████▍   | 485/755 [03:08<01:22,  3.26it/s]Processed prompts:  64%|██████▍   | 486/755 [03:09<01:21,  3.28it/s]Processed prompts:  65%|██████▍   | 488/755 [03:09<01:13,  3.62it/s]Processed prompts:  65%|██████▍   | 490/755 [03:10<01:06,  4.01it/s]Processed prompts:  65%|██████▌   | 491/755 [03:10<01:04,  4.12it/s]Processed prompts:  65%|██████▌   | 492/755 [03:10<01:16,  3.42it/s]Processed prompts:  65%|██████▌   | 493/755 [03:11<01:11,  3.69it/s]Processed prompts:  65%|██████▌   | 494/755 [03:11<01:06,  3.93it/s]Processed prompts:  66%|██████▌   | 495/755 [03:11<01:25,  3.03it/s]Processed prompts:  66%|██████▌   | 496/755 [03:11<01:16,  3.38it/s]Processed prompts:  66%|██████▌   | 498/755 [03:12<01:15,  3.42it/s]Processed prompts:  66%|██████▌   | 499/755 [03:12<01:15,  3.40it/s]Processed prompts:  66%|██████▋   | 502/755 [03:13<00:58,  4.34it/s]Processed prompts:  67%|██████▋   | 503/755 [03:13<01:02,  4.03it/s]Processed prompts:  67%|██████▋   | 504/755 [03:14<01:22,  3.04it/s]Processed prompts:  67%|██████▋   | 506/755 [03:14<01:13,  3.37it/s]Processed prompts:  67%|██████▋   | 508/755 [03:15<01:17,  3.18it/s]Processed prompts:  68%|██████▊   | 510/755 [03:15<01:07,  3.61it/s]Processed prompts:  68%|██████▊   | 512/755 [03:16<01:17,  3.12it/s]Processed prompts:  68%|██████▊   | 513/755 [03:16<01:12,  3.34it/s]Processed prompts:  68%|██████▊   | 514/755 [03:17<01:07,  3.57it/s]Processed prompts:  68%|██████▊   | 515/755 [03:17<01:12,  3.32it/s]Processed prompts:  68%|██████▊   | 516/755 [03:17<01:11,  3.35it/s]Processed prompts:  68%|██████▊   | 517/755 [03:18<01:10,  3.37it/s]Processed prompts:  69%|██████▊   | 518/755 [03:18<01:15,  3.15it/s]Processed prompts:  69%|██████▉   | 521/755 [03:18<00:56,  4.15it/s]Processed prompts:  69%|██████▉   | 522/755 [03:19<00:54,  4.27it/s]Processed prompts:  69%|██████▉   | 523/755 [03:19<01:05,  3.52it/s]Processed prompts:  69%|██████▉   | 524/755 [03:20<01:26,  2.68it/s]Processed prompts:  70%|██████▉   | 525/755 [03:21<01:45,  2.18it/s]Processed prompts:  70%|██████▉   | 527/755 [03:21<01:18,  2.90it/s]Processed prompts:  70%|██████▉   | 528/755 [03:21<01:17,  2.93it/s]Processed prompts:  70%|███████   | 529/755 [03:21<01:07,  3.37it/s]Processed prompts:  70%|███████   | 531/755 [03:22<01:14,  3.02it/s]Processed prompts:  70%|███████   | 532/755 [03:22<01:14,  2.98it/s]Processed prompts:  71%|███████   | 533/755 [03:23<01:08,  3.25it/s]Processed prompts:  71%|███████   | 534/755 [03:23<01:02,  3.55it/s]Processed prompts:  71%|███████   | 535/755 [03:23<01:03,  3.47it/s]Processed prompts:  71%|███████   | 536/755 [03:23<00:59,  3.71it/s]Processed prompts:  71%|███████▏  | 539/755 [03:24<00:52,  4.11it/s]Processed prompts:  72%|███████▏  | 540/755 [03:24<00:51,  4.19it/s]Processed prompts:  72%|███████▏  | 541/755 [03:25<00:53,  3.99it/s]Processed prompts:  72%|███████▏  | 542/755 [03:25<00:51,  4.10it/s]Processed prompts:  72%|███████▏  | 543/755 [03:25<01:04,  3.30it/s]Processed prompts:  72%|███████▏  | 544/755 [03:26<00:59,  3.55it/s]Processed prompts:  72%|███████▏  | 545/755 [03:26<01:09,  3.00it/s]Processed prompts:  72%|███████▏  | 546/755 [03:26<01:03,  3.31it/s]Processed prompts:  72%|███████▏  | 547/755 [03:27<01:12,  2.85it/s]Processed prompts:  73%|███████▎  | 549/755 [03:27<01:06,  3.12it/s]Processed prompts:  73%|███████▎  | 551/755 [03:28<01:03,  3.20it/s]Processed prompts:  73%|███████▎  | 552/755 [03:28<01:02,  3.24it/s]Processed prompts:  73%|███████▎  | 554/755 [03:28<00:49,  4.03it/s]Processed prompts:  74%|███████▎  | 555/755 [03:29<00:55,  3.60it/s]Processed prompts:  74%|███████▎  | 556/755 [03:29<00:52,  3.82it/s]Processed prompts:  74%|███████▍  | 557/755 [03:29<00:49,  3.98it/s]Processed prompts:  74%|███████▍  | 559/755 [03:30<00:49,  3.96it/s]Processed prompts:  74%|███████▍  | 561/755 [03:30<00:47,  4.07it/s]Processed prompts:  74%|███████▍  | 562/755 [03:31<00:52,  3.67it/s]Processed prompts:  75%|███████▍  | 563/755 [03:31<00:54,  3.53it/s]Processed prompts:  75%|███████▍  | 564/755 [03:31<00:55,  3.47it/s]Processed prompts:  75%|███████▌  | 567/755 [03:32<00:41,  4.58it/s]Processed prompts:  75%|███████▌  | 568/755 [03:32<00:40,  4.57it/s]Processed prompts:  75%|███████▌  | 569/755 [03:32<00:44,  4.20it/s]Processed prompts:  75%|███████▌  | 570/755 [03:33<00:49,  3.70it/s]Processed prompts:  76%|███████▌  | 571/755 [03:33<00:47,  3.87it/s]Processed prompts:  76%|███████▌  | 572/755 [03:33<00:45,  4.00it/s]Processed prompts:  76%|███████▌  | 574/755 [03:33<00:42,  4.30it/s]Processed prompts:  76%|███████▌  | 575/755 [03:34<00:44,  4.01it/s]Processed prompts:  76%|███████▋  | 577/755 [03:35<01:02,  2.84it/s]Processed prompts:  77%|███████▋  | 578/755 [03:35<00:56,  3.12it/s]Processed prompts:  77%|███████▋  | 579/755 [03:35<00:59,  2.97it/s]Processed prompts:  77%|███████▋  | 581/755 [03:36<00:46,  3.77it/s]Processed prompts:  77%|███████▋  | 582/755 [03:36<00:43,  3.96it/s]Processed prompts:  77%|███████▋  | 583/755 [03:36<00:45,  3.81it/s]Processed prompts:  77%|███████▋  | 584/755 [03:37<00:46,  3.70it/s]Processed prompts:  77%|███████▋  | 585/755 [03:37<00:47,  3.57it/s]Processed prompts:  78%|███████▊  | 587/755 [03:37<00:37,  4.51it/s]Processed prompts:  78%|███████▊  | 589/755 [03:38<00:58,  2.85it/s]Processed prompts:  78%|███████▊  | 590/755 [03:39<01:12,  2.29it/s]Processed prompts:  78%|███████▊  | 591/755 [03:39<01:03,  2.58it/s]Processed prompts:  78%|███████▊  | 592/755 [03:39<00:56,  2.88it/s]Processed prompts:  79%|███████▊  | 593/755 [03:40<00:50,  3.22it/s]Processed prompts:  79%|███████▉  | 596/755 [03:40<00:38,  4.13it/s]Processed prompts:  79%|███████▉  | 597/755 [03:40<00:37,  4.24it/s]Processed prompts:  79%|███████▉  | 599/755 [03:41<00:37,  4.12it/s]Processed prompts:  80%|███████▉  | 601/755 [03:41<00:33,  4.59it/s]Processed prompts:  80%|███████▉  | 602/755 [03:42<00:35,  4.30it/s]Processed prompts:  80%|███████▉  | 603/755 [03:42<00:35,  4.34it/s]Processed prompts:  80%|████████  | 604/755 [03:42<00:37,  4.03it/s]Processed prompts:  80%|████████  | 605/755 [03:43<00:51,  2.89it/s]Processed prompts:  80%|████████  | 606/755 [03:43<01:06,  2.25it/s]Processed prompts:  80%|████████  | 607/755 [03:44<01:04,  2.30it/s]Processed prompts:  81%|████████  | 609/755 [03:44<00:54,  2.67it/s]Processed prompts:  81%|████████  | 610/755 [03:45<00:54,  2.68it/s]Processed prompts:  81%|████████  | 611/755 [03:45<00:48,  2.99it/s]Processed prompts:  81%|████████  | 612/755 [03:45<00:43,  3.32it/s]Processed prompts:  81%|████████▏ | 614/755 [03:46<00:41,  3.36it/s]Processed prompts:  82%|████████▏ | 616/755 [03:46<00:36,  3.79it/s]Processed prompts:  82%|████████▏ | 617/755 [03:46<00:35,  3.92it/s]Processed prompts:  82%|████████▏ | 618/755 [03:47<00:33,  4.04it/s]Processed prompts:  82%|████████▏ | 619/755 [03:47<00:41,  3.31it/s]Processed prompts:  82%|████████▏ | 621/755 [03:48<00:40,  3.32it/s]Processed prompts:  82%|████████▏ | 622/755 [03:48<00:37,  3.54it/s]Processed prompts:  83%|████████▎ | 623/755 [03:48<00:35,  3.74it/s]Processed prompts:  83%|████████▎ | 624/755 [03:49<00:39,  3.35it/s]Processed prompts:  83%|████████▎ | 625/755 [03:49<00:38,  3.34it/s]Processed prompts:  83%|████████▎ | 626/755 [03:49<00:44,  2.88it/s]Processed prompts:  83%|████████▎ | 627/755 [03:50<00:57,  2.23it/s]Processed prompts:  83%|████████▎ | 629/755 [03:50<00:43,  2.93it/s]Processed prompts:  83%|████████▎ | 630/755 [03:51<00:45,  2.77it/s]Processed prompts:  84%|████████▎ | 631/755 [03:52<01:01,  2.02it/s]Processed prompts:  84%|████████▍ | 633/755 [03:52<00:44,  2.73it/s]Processed prompts:  84%|████████▍ | 634/755 [03:53<00:44,  2.72it/s]Processed prompts:  84%|████████▍ | 635/755 [03:53<00:50,  2.37it/s]Processed prompts:  84%|████████▍ | 636/755 [03:53<00:46,  2.56it/s]Processed prompts:  84%|████████▍ | 637/755 [03:54<00:51,  2.28it/s]Processed prompts:  85%|████████▍ | 638/755 [03:54<00:47,  2.49it/s]Processed prompts:  85%|████████▍ | 639/755 [03:55<00:48,  2.38it/s]Processed prompts:  85%|████████▍ | 640/755 [03:55<00:54,  2.09it/s]Processed prompts:  85%|████████▍ | 641/755 [03:56<00:51,  2.22it/s]Processed prompts:  85%|████████▌ | 642/755 [03:56<00:45,  2.47it/s]Processed prompts:  85%|████████▌ | 643/755 [03:57<00:58,  1.90it/s]Processed prompts:  85%|████████▌ | 644/755 [03:57<00:52,  2.11it/s]Processed prompts:  85%|████████▌ | 645/755 [03:58<00:53,  2.05it/s]Processed prompts:  86%|████████▌ | 646/755 [03:58<00:52,  2.08it/s]Processed prompts:  86%|████████▌ | 647/755 [03:58<00:43,  2.50it/s]Processed prompts:  86%|████████▌ | 648/755 [03:59<00:42,  2.52it/s]Processed prompts:  86%|████████▌ | 649/755 [03:59<00:39,  2.71it/s]Processed prompts:  86%|████████▌ | 650/755 [03:59<00:34,  3.07it/s]Processed prompts:  86%|████████▌ | 651/755 [04:00<00:44,  2.36it/s]Processed prompts:  86%|████████▋ | 652/755 [04:00<00:43,  2.39it/s]Processed prompts:  86%|████████▋ | 653/755 [04:01<00:41,  2.44it/s]Processed prompts:  87%|████████▋ | 654/755 [04:01<00:35,  2.83it/s]Processed prompts:  87%|████████▋ | 655/755 [04:02<00:43,  2.29it/s]Processed prompts:  87%|████████▋ | 656/755 [04:02<00:49,  2.01it/s]Processed prompts:  87%|████████▋ | 657/755 [04:02<00:40,  2.41it/s]Processed prompts:  87%|████████▋ | 658/755 [04:03<00:36,  2.62it/s]Processed prompts:  87%|████████▋ | 659/755 [04:03<00:39,  2.45it/s]Processed prompts:  87%|████████▋ | 660/755 [04:04<00:40,  2.37it/s]Processed prompts:  88%|████████▊ | 661/755 [04:04<00:43,  2.16it/s]Processed prompts:  88%|████████▊ | 662/755 [04:05<00:39,  2.37it/s]Processed prompts:  88%|████████▊ | 663/755 [04:05<00:33,  2.77it/s]Processed prompts:  88%|████████▊ | 664/755 [04:05<00:40,  2.27it/s]Processed prompts:  88%|████████▊ | 665/755 [04:06<00:35,  2.52it/s]Processed prompts:  88%|████████▊ | 666/755 [04:06<00:37,  2.39it/s]Processed prompts:  88%|████████▊ | 667/755 [04:07<00:40,  2.19it/s]Processed prompts:  88%|████████▊ | 668/755 [04:07<00:33,  2.58it/s]Processed prompts:  89%|████████▊ | 669/755 [04:07<00:31,  2.73it/s]Processed prompts:  89%|████████▊ | 670/755 [04:08<00:38,  2.22it/s]Processed prompts:  89%|████████▉ | 671/755 [04:08<00:36,  2.28it/s]Processed prompts:  89%|████████▉ | 673/755 [04:09<00:29,  2.79it/s]Processed prompts:  89%|████████▉ | 674/755 [04:09<00:29,  2.74it/s]Processed prompts:  90%|████████▉ | 676/755 [04:10<00:26,  2.94it/s]Processed prompts:  90%|████████▉ | 677/755 [04:10<00:24,  3.19it/s]Processed prompts:  90%|████████▉ | 678/755 [04:10<00:25,  3.02it/s]Processed prompts:  90%|████████▉ | 679/755 [04:11<00:22,  3.34it/s]Processed prompts:  90%|█████████ | 680/755 [04:11<00:29,  2.57it/s]Processed prompts:  90%|█████████ | 681/755 [04:12<00:25,  2.91it/s]Processed prompts:  90%|█████████ | 682/755 [04:13<00:37,  1.93it/s]Processed prompts:  90%|█████████ | 683/755 [04:13<00:34,  2.09it/s]Processed prompts:  91%|█████████ | 684/755 [04:14<00:45,  1.55it/s]Processed prompts:  91%|█████████ | 685/755 [04:14<00:35,  1.99it/s]Processed prompts:  91%|█████████ | 686/755 [04:14<00:31,  2.16it/s]Processed prompts:  91%|█████████ | 687/755 [04:15<00:28,  2.35it/s]Processed prompts:  91%|█████████▏| 689/755 [04:15<00:22,  2.93it/s]Processed prompts:  92%|█████████▏| 691/755 [04:16<00:19,  3.27it/s]Processed prompts:  92%|█████████▏| 692/755 [04:16<00:24,  2.62it/s]Processed prompts:  92%|█████████▏| 693/755 [04:17<00:23,  2.62it/s]Processed prompts:  92%|█████████▏| 694/755 [04:17<00:21,  2.79it/s]Processed prompts:  92%|█████████▏| 695/755 [04:18<00:24,  2.41it/s]Processed prompts:  92%|█████████▏| 696/755 [04:18<00:27,  2.11it/s]Processed prompts:  92%|█████████▏| 697/755 [04:19<00:24,  2.35it/s]Processed prompts:  92%|█████████▏| 698/755 [04:19<00:26,  2.16it/s]Processed prompts:  93%|█████████▎| 699/755 [04:19<00:23,  2.40it/s]Processed prompts:  93%|█████████▎| 700/755 [04:20<00:22,  2.42it/s]Processed prompts:  93%|█████████▎| 701/755 [04:20<00:20,  2.66it/s]Processed prompts:  93%|█████████▎| 702/755 [04:20<00:17,  3.03it/s]Processed prompts:  93%|█████████▎| 703/755 [04:21<00:20,  2.53it/s]Processed prompts:  93%|█████████▎| 705/755 [04:22<00:21,  2.28it/s]Processed prompts:  94%|█████████▎| 706/755 [04:22<00:19,  2.47it/s]Processed prompts:  94%|█████████▎| 707/755 [04:23<00:18,  2.67it/s]Processed prompts:  94%|█████████▍| 708/755 [04:23<00:18,  2.50it/s]Processed prompts:  94%|█████████▍| 709/755 [04:24<00:21,  2.14it/s]Processed prompts:  94%|█████████▍| 710/755 [04:24<00:17,  2.51it/s]Processed prompts:  94%|█████████▍| 711/755 [04:24<00:15,  2.83it/s]Processed prompts:  94%|█████████▍| 712/755 [04:24<00:12,  3.37it/s]Processed prompts:  95%|█████████▍| 714/755 [04:25<00:14,  2.80it/s]Processed prompts:  95%|█████████▍| 716/755 [04:26<00:11,  3.26it/s]Processed prompts:  95%|█████████▍| 717/755 [04:26<00:10,  3.66it/s]Processed prompts:  95%|█████████▌| 718/755 [04:26<00:10,  3.59it/s]Processed prompts:  95%|█████████▌| 719/755 [04:26<00:11,  3.11it/s]Processed prompts:  95%|█████████▌| 721/755 [04:27<00:09,  3.61it/s]Processed prompts:  96%|█████████▌| 722/755 [04:27<00:10,  3.06it/s]Processed prompts:  96%|█████████▌| 723/755 [04:28<00:10,  3.17it/s]Processed prompts:  96%|█████████▌| 725/755 [04:28<00:08,  3.74it/s]Processed prompts:  96%|█████████▋| 727/755 [04:28<00:05,  4.90it/s]Processed prompts:  97%|█████████▋| 729/755 [04:29<00:04,  5.33it/s]Processed prompts:  97%|█████████▋| 730/755 [04:29<00:07,  3.53it/s]Processed prompts:  97%|█████████▋| 732/755 [04:30<00:08,  2.60it/s]Processed prompts:  97%|█████████▋| 733/755 [04:31<00:09,  2.42it/s]Processed prompts:  97%|█████████▋| 735/755 [04:31<00:06,  3.20it/s]Processed prompts:  98%|█████████▊| 737/755 [04:32<00:05,  3.60it/s]Processed prompts:  98%|█████████▊| 738/755 [04:32<00:06,  2.53it/s]Processed prompts:  98%|█████████▊| 741/755 [04:33<00:03,  3.51it/s]Processed prompts:  98%|█████████▊| 742/755 [04:35<00:08,  1.51it/s]Processed prompts:  98%|█████████▊| 743/755 [04:36<00:06,  1.78it/s]Processed prompts:  99%|█████████▊| 744/755 [04:38<00:09,  1.12it/s]Processed prompts:  99%|█████████▊| 745/755 [04:38<00:07,  1.38it/s]Processed prompts:  99%|█████████▉| 746/755 [04:38<00:05,  1.61it/s]Processed prompts:  99%|█████████▉| 747/755 [04:38<00:04,  1.97it/s]Processed prompts:  99%|█████████▉| 748/755 [04:42<00:09,  1.37s/it]Processed prompts:  99%|█████████▉| 749/755 [04:45<00:11,  1.91s/it]Processed prompts:  99%|█████████▉| 750/755 [04:47<00:09,  1.87s/it]Processed prompts:  99%|█████████▉| 751/755 [04:48<00:06,  1.51s/it]Processed prompts: 100%|█████████▉| 752/755 [04:50<00:05,  1.71s/it]Processed prompts: 100%|█████████▉| 753/755 [04:53<00:04,  2.27s/it]Processed prompts: 100%|█████████▉| 754/755 [04:54<00:01,  1.71s/it]Processed prompts: 100%|██████████| 755/755 [04:54<00:00,  1.39s/it]Processed prompts: 100%|██████████| 755/755 [04:54<00:00,  2.56it/s]
+extract answer:   0%|          | 0/755 [00:00<?, ?it/s]extract answer: 100%|██████████| 755/755 [00:00<00:00, 44375.77it/s]
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Calculating accuracy...
+output acc = 56.29139
+Timeout count >>> output eval = 0

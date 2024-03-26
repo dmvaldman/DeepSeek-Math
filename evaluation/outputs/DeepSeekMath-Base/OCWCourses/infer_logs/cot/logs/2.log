@@ -1,0 +1,814 @@
+[]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading data...
+Loading model and tokenizer...
+INFO 03-26 03:02:25 llm_engine.py:87] Initializing an LLM engine with config: model='deepseek-ai/deepseek-math-7b-base', tokenizer='deepseek-ai/deepseek-math-7b-base', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, seed=0)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 03-26 03:02:29 weight_utils.py:163] Using model weights format ['*.bin']
+INFO 03-26 03:02:41 llm_engine.py:357] # GPU blocks: 3521, # CPU blocks: 546
+INFO 03-26 03:02:43 model_runner.py:684] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 03-26 03:02:43 model_runner.py:688] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-26 03:02:47 model_runner.py:756] Graph capturing finished in 4 secs.
+Processed prompts:   0%|          | 0/68 [00:00<?, ?it/s]Processed prompts:   1%|▏         | 1/68 [00:10<11:19, 10.14s/it]Processed prompts:   3%|▎         | 2/68 [00:10<04:48,  4.37s/it]Processed prompts:   4%|▍         | 3/68 [00:10<02:42,  2.50s/it]Processed prompts:   7%|▋         | 5/68 [00:11<01:13,  1.17s/it]Processed prompts:   9%|▉         | 6/68 [00:11<00:55,  1.11it/s]Processed prompts:  10%|█         | 7/68 [00:11<00:42,  1.42it/s]Processed prompts:  12%|█▏        | 8/68 [00:11<00:36,  1.64it/s]Processed prompts:  13%|█▎        | 9/68 [00:12<00:28,  2.04it/s]Processed prompts:  15%|█▍        | 10/68 [00:12<00:22,  2.54it/s]Processed prompts:  19%|█▉        | 13/68 [00:12<00:11,  4.93it/s]Processed prompts:  21%|██        | 14/68 [00:12<00:14,  3.64it/s]Processed prompts:  25%|██▌       | 17/68 [00:13<00:09,  5.55it/s]Processed prompts:  28%|██▊       | 19/68 [00:13<00:07,  6.78it/s]Processed prompts:  31%|███       | 21/68 [00:13<00:06,  6.79it/s]Processed prompts:  32%|███▏      | 22/68 [00:13<00:06,  6.83it/s]Processed prompts:  34%|███▍      | 23/68 [00:13<00:07,  6.25it/s]Processed prompts:  35%|███▌      | 24/68 [00:14<00:07,  5.83it/s]Processed prompts:  38%|███▊      | 26/68 [00:14<00:05,  7.61it/s]Processed prompts:  41%|████      | 28/68 [00:14<00:04,  8.28it/s]Processed prompts:  43%|████▎     | 29/68 [00:14<00:06,  5.62it/s]Processed prompts:  44%|████▍     | 30/68 [00:15<00:09,  3.89it/s]Processed prompts:  46%|████▌     | 31/68 [00:15<00:08,  4.42it/s]Processed prompts:  47%|████▋     | 32/68 [00:15<00:07,  4.97it/s]Processed prompts:  49%|████▊     | 33/68 [00:15<00:06,  5.04it/s]Processed prompts:  50%|█████     | 34/68 [00:16<00:12,  2.82it/s]Processed prompts:  51%|█████▏    | 35/68 [00:17<00:13,  2.42it/s]Processed prompts:  54%|█████▍    | 37/68 [00:18<00:14,  2.20it/s]Processed prompts:  56%|█████▌    | 38/68 [00:20<00:25,  1.18it/s]Processed prompts:  57%|█████▋    | 39/68 [00:20<00:20,  1.42it/s]Processed prompts:  59%|█████▉    | 40/68 [00:22<00:28,  1.03s/it]Processed prompts:  60%|██████    | 41/68 [00:22<00:22,  1.21it/s]Processed prompts:  62%|██████▏   | 42/68 [00:24<00:31,  1.19s/it]Processed prompts:  63%|██████▎   | 43/68 [00:26<00:35,  1.41s/it]Processed prompts:  65%|██████▍   | 44/68 [00:29<00:44,  1.85s/it]Processed prompts:  68%|██████▊   | 46/68 [00:30<00:24,  1.09s/it]Processed prompts:  69%|██████▉   | 47/68 [01:11<03:47, 10.85s/it]Processed prompts:  97%|█████████▋| 66/68 [01:12<00:02,  1.47s/it]Processed prompts:  99%|█████████▊| 67/68 [01:12<00:01,  1.39s/it]Processed prompts: 100%|██████████| 68/68 [01:12<00:00,  1.07s/it]
+extract answer:   0%|          | 0/68 [00:00<?, ?it/s]DEBUG >>>
+
+The mass of the black hole is 4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+DEBUG >>>
+
+The power radiated by the Sun is given by
+\[
+P=\frac{L}{4 \pi R^{2}}
+\]
+where $L$ is the luminosity of the Sun. The luminosity is given by
+\[
+L=4 \pi R^{2} \sigma T_{s}^{4}
+\]
+where $\sigma$ is the Stefan-Boltzmann constant and $T_{s}$ is the surface temperature of the Sun. Therefore, the power radiated by the Sun is given by
+\[
+P=\sigma T_{s}^{4}
+\]
+The total energy of the Sun is given by
+\[
+E \simeq-\frac{G M^{2}}{R}
+\]
+where $M$ is the mass of the Sun. The rate of change of the total energy of the Sun is given by
+\[
+\frac{d E}{d t}=-\frac{G M^{2}}{R^{2}} \frac{d R}{d t}
+\]
+where $\frac{d R}{d t}$ is the rate of change of the radius of the Sun. The rate of change of the radius of the Sun is given by
+\[
+\frac{d R}{d t}=\frac{P}{4 \pi R^{2}}
+\]
+Therefore, the rate of change of the total energy of the Sun is given by
+\[
+\frac{d E}{d t}=-\frac{G M^{2}}{R^{2}} \frac{P}{4 \pi R^{2}}
+\]
+\[
+\frac{d E}{d t}=-\frac{G M^{2} P}{4 \pi R^{4}}
+\]
+The time for the Sun to shrink to $1 / 2$ its present radius is given by
+\[
+\int_{R_{0}}^{R_{0} / 2} d R=\int_{0}^{t} \frac{G M^{2} P}{4 \pi R^{4}} d t
+\]
+\[
+\frac{R_{0}}{2}-\frac{R_{0}}{2}=-\frac{G M^{2} P}{4 \pi} \int_{0}^{t} \frac{1}{R^{4}} d t
+\]
+\[
+\frac{R_{0}}{2}=-\frac{G M^{2} P}{4 \pi} \left[\frac{-1}{3 R^{3}}\right]_{0}^{t}
+\]
+\[
+\frac{R_{0}}{2}=\frac{G M^{2} P}{12 \pi R_{0}^{3}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} P}
+\]
+where $R_{0}$ is the present radius of the Sun. The time for the Sun to shrink to $1 / 2$ its present radius is given by
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} P}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma T_{s}^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R_{0}^{4}}{G M^{2} \sigma (5800 \mathrm{~K})^{4}}
+\]
+\[
+t=\frac{12 \pi R
+DEBUG >>>
+
+The equation of hydrostatic equilibrium is:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+\]
+where $g$ is the gravitational acceleration. 
+We can write the equation of hydrostatic equilibrium as:
+\[
+\frac{d P}{d r}=-g \rho
+DEBUG >>>
+
+The energy imparted to an electron by an accelerating potential of one Volt is 
+$1.6 \times 10^{-19}$ J oules; dimensional analysis shows that the dimensions of 
+charge $x$ potential correspond to those of energy; thus: 1 electron Volt $(1 \mathrm{eV})=1.6 \times 10^{-19}$ Coulomb $\times 1$ Volt $=1.6 \times 10^{-19}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$1.6 \times 10^{-19} \times 150=2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The energy imparted to an electron by an accelerating potential of 150 Volt is 
+$2.4 \times 10^{-17}$ Joules.
+The
+DEBUG >>>
+
+\[
+\begin{aligned}
+n_{i} &=9.7 \times 10^{15} \mathrm{~T}^{3 / 2} \mathrm{e}^{-\mathrm{E}_{g} / 2 \mathrm{KT}} \\
+&=9.7 \times 10^{15} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \mathrm{~T}^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.15)^{3 / 2} \mathrm{e}^{-0.72 / 2 \times 8.62 \times 10^{-5} \times 293.15} \\
+&=1.02 \times 10^{19} \times(293.
+DEBUG >>>
+
+The H\"uckel MOs for benzene are:
+\begin{align*}
+\phi_{1} &=0.5\left(\phi_{2 p_{x}}\right)_{1}+0.5\left(\phi_{2 p_{x}}\right)_{2}+0.5\left(\phi_{2 p_{x}}\right)_{3}+0.5\left(\phi_{2 p_{x}}\right)_{4}+0.5\left(\phi_{2 p_{x}}\right)_{5}+0.5\left(\phi_{2 p_{x}}\right)_{6} \\
+\phi_{2} &=0.5\left(\phi_{2 p_{x}}\right)_{1}-0.5\left(\phi_{2 p_{x}}\right)_{2}+0.5\left(\phi_{2 p_{x}}\right)_{3}-0.5\left(\phi_{2 p_{x}}\right)_{4}+0.5\left(\phi_{2 p_{x}}\right)_{5}-0.5\left(\phi_{2 p_{x}}\right)_{6} \\
+\phi_{3} &=0.5\left(\phi_{2 p_{x}}\right)_{1}+0.5\left(\phi_{2 p_{x}}\right)_{2}-0.5\left(\phi_{2 p_{x}}\right)_{3}-0.5\left(\phi_{2 p_{x}}\right)_{4}-0.5\left(\phi_{2 p_{x}}\right)_{5}-0.5\left(\phi_{2 p_{x}}\right)_{6} \\
+\phi_{4} &=0.5\left(\phi_{2 p_{x}}\right)_{1}-0.5\left(\phi_{2 p_{x}}\right)_{2}-0.5\left(\phi_{2 p_{x}}\right)_{3}+0.5\left(\phi_{2 p_{x}}\right)_{4}-0.5\left(\phi_{2 p_{x}}\right)_{5}+0.5\left(\phi_{2 p_{x}}\right)_{6} \\
+\phi_{5} &=0.5\left(\phi_{2 p_{x}}\right)_{1}-0.5\left(\phi_{2 p_{x}}\right)_{2}-0.5\left(\phi_{2 p_{x}}\right)_{3}-0.5\left(\phi_{2 p_{x}}\right)_{4}+0.5\left(\phi_{2 p_{x}}\right)_{5}+0.5\left(\phi_{2 p_{x}}\right)_{6} \\
+\phi_{6} &=0.5\left(\phi_{2 p_{x}}\right)_{1}+0.5\left(\phi_{2 p_{x}}\right)_{2}+0.5\left(\phi_{2 p_{x}}\right)_{3}-0.5\left(\phi_{2 p_{x}}\right)_{4}+0.5\left(\phi_{2 p_{x}}\right)_{5}-0.5\left(\phi_{2 p_{x}}\right)_{6}
+\end{align*}
+The energy of the H\"uckel MOs are:
+\begin{align*}
+E_{1} &=-11.2+0.5(-0.7-0.7-0.7-0.7-0.7-0.7)=-12.1 \mathrm{eV} \\
+E_{2} &=-11.2+0.5(-0.7+0.7-0.7+0.7-0.7+0.7)=-11.2 \mathrm{eV} \\
+E_{3} &=-11.2+0.5(-0.7-0.7+0.7+0.7-0.7-0.7)=-11.2 \mathrm{eV} \\
+E_{4} &=-11.2+0.5(-0.7+0.7+0.7-0.7-0.7+0.7)=-11.2 \mathrm{eV} \\
+E_{5} &=-11.2+0.5(-0.7+0.7+0.7+0.7-0.7-0.7)=-11.2 \mathrm{eV} \\
+E_{6} &=-11.2+0.5(-0.7-0.7-0.7+0.7-0.7+0.7)=-11.2 \mathrm{eV}
+\end{align*}
+The ground state energy of benzene is:
+\begin{align*}
+DEBUG >>>
+
+We have
+\[
+\begin{aligned}
+\int \psi_{22}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{4} \psi_{2,-2} d \tau &=4 \int \psi_{22}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{2} \psi_{2,-1} d \tau \\
+&=4 \int \psi_{22}^{*}\left(\widehat{\mathbf{J}}^{+}\right) \psi_{20} d \tau \\
+&=4 \int \psi_{22}^{*}\psi_{21} d \tau \\
+&=4 \int \psi_{21}^{*}\psi_{22} d \tau \\
+&=4 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right) \psi_{20} d \tau \\
+&=4 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{2} \psi_{2,-1} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{2} \psi_{2,-2} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{3} \psi_{2,-3} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{4} \psi_{2,-4} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{4} \psi_{22} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{5} \psi_{21} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{6} \psi_{20} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{7} \psi_{2,-1} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{8} \psi_{2,-2} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{8} \psi_{22} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{9} \psi_{21} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{10} \psi_{20} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{11} \psi_{2,-1} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{12} \psi_{2,-2} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{12} \psi_{22} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{13} \psi_{21} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{14} \psi_{20} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{15} \psi_{2,-1} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{16} \psi_{2,-2} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{16} \psi_{22} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{17} \psi_{21} d \tau \\
+&=16 \int \psi_{21}^{*}\left(\widehat{\mathbf{J}}^{+}\right)^{18} \psi_{20} d \tau
+extract answer: 100%|██████████| 68/68 [00:00<00:00, 10048.71it/s]
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+/root/anaconda3/envs/vllm020/lib/python3.10/site-packages/sympy/parsing/latex/_parse_latex_antlr.py:23: UserWarning: antlr4.error.ErrorListener module is not installed
+  ErrorListener = import_module('antlr4.error.ErrorListener',
+Calculating accuracy...
+output acc = 19.11765
+Timeout count >>> output eval = 0
